@@ -1,0 +1,19 @@
+rootProject.name = 'react-native-giap';
+
+def giapDir = new File('giap/giap')
+println('giap1')
+if (!giapDir.exists()) {
+    println('giap2')
+    // example
+    giapDir = new File('../../android/giap/giap')
+}
+if (!giapDir.exists()) {
+    println('giap3')
+    throw new GradleException(
+            "Unable to locate giap project."
+    )
+}
+
+println('giap4')
+include ':giap'
+project(':giap').projectDir = giapDir;

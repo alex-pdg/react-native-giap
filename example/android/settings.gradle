@@ -1,0 +1,8 @@
+rootProject.name = 'GiapExample'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':giap'
+project(':giap').projectDir = new File(rootProject.projectDir, '../../android/giap/giap')
+include ':react-native-giap'
+project(':react-native-giap').projectDir = new File(rootProject.projectDir, '../../android')
