@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--TODO: Testing only - allows non-https request to DEV-->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">13.250.58.88</domain>
+        <domain includeSubdomains="true">www.mocky.io</domain>
+    </domain-config>
+</network-security-config>
