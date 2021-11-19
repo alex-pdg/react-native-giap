@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="GIAPViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Bee-Fh-ZgM">
+                                <rect key="frame" x="159" y="272.5" width="57" height="122"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhe-DY-PMA">
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
+                                        <state key="normal" title="Visit"/>
+                                        <connections>
+                                            <action selector="didClickVisit:" destination="whP-gf-Uak" eventType="touchUpInside" id="Cch-hc-8ar"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgR-2N-Nzi">
+                                        <rect key="frame" x="0.0" y="46" width="57" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="didClickLogin:" destination="whP-gf-Uak" eventType="touchUpInside" id="FNW-Gq-4YG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fic-bd-x8m">
+                                        <rect key="frame" x="0.0" y="92" width="57" height="30"/>
+                                        <state key="normal" title="Sign-Up"/>
+                                        <connections>
+                                            <action selector="didClickSignUp:" destination="whP-gf-Uak" eventType="touchUpInside" id="CEG-l0-iu2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dB5-mr-50V">
+                                <rect key="frame" x="130" y="157.5" width="115" height="352"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We5-OJ-pac">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
+                                        <state key="normal" title="Ask"/>
+                                        <connections>
+                                            <action selector="didClickAsk:" destination="whP-gf-Uak" eventType="touchUpInside" id="p6w-D0-CdO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBL-Jq-rFi">
+                                        <rect key="frame" x="0.0" y="46" width="115" height="30"/>
+                                        <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="didClickLogout:" destination="whP-gf-Uak" eventType="touchUpInside" id="WMS-ic-5d3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="198-LZ-rc5">
+                                        <rect key="frame" x="0.0" y="92" width="115" height="30"/>
+                                        <state key="normal" title="Set Full Name"/>
+                                        <connections>
+                                            <action selector="didClickSetFullName:" destination="whP-gf-Uak" eventType="touchUpInside" id="lQT-rb-2Zy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHE-ki-j86" userLabel="Increase Count">
+                                        <rect key="frame" x="0.0" y="138" width="115" height="30"/>
+                                        <state key="normal" title="Increase Count"/>
+                                        <connections>
+                                            <action selector="didClickIncreaseCount:" destination="whP-gf-Uak" eventType="touchUpInside" id="U6z-Iv-Fuk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgH-y7-Vh7">
+                                        <rect key="frame" x="0.0" y="184" width="115" height="30"/>
+                                        <state key="normal" title="Decrease Count"/>
+                                        <connections>
+                                            <action selector="didClickDecreaseCount:" destination="whP-gf-Uak" eventType="touchUpInside" id="PRu-dD-zyA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRE-jP-n5l" userLabel="Add Tags">
+                                        <rect key="frame" x="0.0" y="230" width="115" height="30"/>
+                                        <state key="normal" title="Add Tags"/>
+                                        <connections>
+                                            <action selector="didClickAddTags:" destination="whP-gf-Uak" eventType="touchUpInside" id="WQo-tR-Yfe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFv-SD-1e4" userLabel="Remove Tags">
+                                        <rect key="frame" x="0.0" y="276" width="115" height="30"/>
+                                        <state key="normal" title="Remove Tags"/>
+                                        <connections>
+                                            <action selector="didClickRemoveTags:" destination="whP-gf-Uak" eventType="touchUpInside" id="4pG-xv-YCN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cY5-Uu-tq0">
+                                        <rect key="frame" x="0.0" y="322" width="115" height="30"/>
+                                        <state key="normal" title="Send test events"/>
+                                        <connections>
+                                            <action selector="didClickSendTestEvents:" destination="whP-gf-Uak" eventType="touchUpInside" id="0Re-kB-YQb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dB5-mr-50V" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="3WV-F8-MAn"/>
+                            <constraint firstItem="Bee-Fh-ZgM" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="6HO-7k-JNU"/>
+                            <constraint firstItem="Bee-Fh-ZgM" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="8Z1-0z-S1U"/>
+                            <constraint firstItem="dB5-mr-50V" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="dAd-Ch-zU0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loggedInStack" destination="dB5-mr-50V" id="DAo-fz-0SZ"/>
+                        <outlet property="notLoggedInStack" destination="Bee-Fh-ZgM" id="ae2-dY-lrw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
+        </scene>
+    </scenes>
+</document>

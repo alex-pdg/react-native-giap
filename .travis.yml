@@ -1,0 +1,11 @@
+branches:
+    only:
+        - master
+        - mvp/master
+osx_image: xcode11.3
+language: objective-c
+install:
+    - gem install cocoapods --pre
+    - cd Example && pod install --repo-update && cd ../
+script:
+    - set -o pipefail && xcodebuild -enableCodeCoverage YES -workspace Example/GIAP.xcworkspace -scheme GIAP-Example -destination platform\=iOS\ Simulator,OS\=11.3,name\=iPhone\ X build test | xcpretty
